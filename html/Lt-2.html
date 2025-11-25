@@ -108,15 +108,34 @@
         <br />
         <fieldset>
           <legend>Academic Information</legend>
-          <label for="qualifications">Highest Qualification:</label>
-          <select name="qualifications" id="qualifications" required>
-            <option value="HSC/O Level">School(HSC/O Level)</option>
-            <option value="SSC/A Level">College(SSC/A Level)</option>
-          </select>
+          <label for="school_name">School Name: </label>
+          <input
+            type="text"
+            name="school_name"
+            id="school_name"
+            placeholder="Enter your school name here"
+            maxlength="30"
+            required
+          />
           <br />
           <br />
-          <span>Upload Transcript: </span>
-          <input type="file" name="Transcript" id="Transcript" required />
+          <label for="college_name">College Name: </label>
+          <input
+            type="text"
+            name="college_name"
+            id="college_name"
+            placeholder="Enter your college name here"
+            maxlength="30"
+            required
+          />
+          <br />
+          <br />
+          <span>Upload Your Transcript(HSC/O Level): </span>
+          <input type="file" name="HSC/O Level" id="HSC/O Level" required />
+          <br />
+          <br />
+          <span>Upload Your Transcript(SSC/A Level): </span>
+          <input type="file" name="SSC/A Level" id="SSC/A Level" required />
           <br />
           <br />
           <label for="courses">Choose a Department:</label>
