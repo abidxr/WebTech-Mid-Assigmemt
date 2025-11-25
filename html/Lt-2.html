@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="University Admission form for students" />
+    <meta name="keywords" content="University Admission, Admission, students" />
+    <meta name="author" content="Abid Rahman" />
+    <meta name="viewport" content="viewport=device-width,initial-scale=1.0" />
+    <title>University Admission Form</title>
+  </head>
+  <body>
+    <header>
+      <h1><u>University Admission Form </u></h1>
+    </header>
+    <main>
+      <form action="submit">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="first_name">First Name: </label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="Enter your first name here"
+            maxlength="10"
+            required
+          />
+          <br />
+          <br />
+          <label for="surname_name">Surname: </label>
+          <input
+            type="text"
+            name="surname_name"
+            id="surname_name"
+            placeholder="Enter your surname here"
+            maxlength="10"
+            required
+          />
+          <br />
+          <br />
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email here"
+            required
+          />
+          <br />
+          <br />
+          <span>Gender:</span>
+          <input type="radio" name="gender" id="male" value="Male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            name="gender"
+            id="female"
+            value="Female"
+            required
+          />
+          <label for="female">Female</label>
+          <br />
+          <br />
+          <label for="dob">Date of birth: </label>
+          <input type="date" name="dob" id="dob" required />
+          <br />
+          <br />
+          <span>Interests:</span>
+          <input
+            type="checkbox"
+            name="interest1"
+            id="interest1"
+            value="Sports"
+          />
+          <label for="interest1">Sports</label>
+          <input
+            type="checkbox"
+            name="interest2"
+            id="interest2"
+            value="Music"
+          />
+          <label for="interest2">Music</label>
+          <input
+            type="checkbox"
+            name="interest3"
+            id="interest3"
+            value="Public Speaking"
+          />
+          <label for="interest3">Public Speaking</label>
+          <input
+            type="checkbox"
+            name="interest4"
+            id="interest4"
+            value="Volunteering"
+          />
+          <label for="interest4">Volunteering</label>
+          <input
+            type="checkbox"
+            name="interest5"
+            id="interest5"
+            value="Others"
+          />
+          <label for="interest5">Others</label>
+          <input type="checkbox" name="interest6" id="interest6" value="None" />
+          <label for="interest6">None</label>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+          <legend>Academic Information</legend>
+          <label for="qualifications">Highest Qualification:</label>
+          <select name="qualifications" id="qualifications" required>
+            <option value="HSC/O Level">School(HSC/O Level)</option>
+            <option value="SSC/A Level">College(SSC/A Level)</option>
+          </select>
+          <br />
+          <br />
+          <span>Upload Transcript: </span>
+          <input type="file" name="Transcript" id="Transcript" required />
+          <br />
+          <br />
+          <label for="courses">Choose a Department:</label>
+          <select name="courses" id="courses" required>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="BBA">BBA</option>
+            <option value="LAW">LAW</option>
+            <option value="Pharmacy">Pharmacy</option>
+          </select>
+          <br />
+          <br />
+        </fieldset>
+        <br />
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </main>
+  </body>
+</html>
