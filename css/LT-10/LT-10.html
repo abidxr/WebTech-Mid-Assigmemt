@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Abid Rahman" />
+    <meta name="viewport" content="viewport=device-width,initial-scale=1.0" />
+    <title>Layered Elements Using Z-index</title>
+  </head>
+
+  <body>
+    <div
+      style="
+        background-color: red;
+        position: absolute;
+        z-index: 1;
+        top: 60px;
+        left: 50px;
+        height: 100px;
+        width: 200px;
+      "
+    >
+      <p style="bottom: 0; right: 0; position: absolute">Box 1</p>
+    </div>
+
+    <div
+      style="
+        background-color: blue;
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        left: 40px;
+        height: 100px;
+        width: 200px;
+      "
+    >
+      <p style="bottom: 0; right: 0; position: absolute">Box 2</p>
+    </div>
+
+    <div
+      style="
+        background-color: green;
+        position: absolute;
+        z-index: 3;
+        top: 40px;
+        left: 30px;
+        height: 100px;
+        width: 200px;
+      "
+    >
+      <p style="bottom: 0; right: 0; position: absolute">Box 3</p>
+    </div>
+  </body>
+</html>
